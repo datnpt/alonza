@@ -10,8 +10,18 @@ body {
 	height: auto;
 	display: block;
 }
-.fv_02 {
-
+.tv_06 .video {
+	text-align: center;
+}
+.tv_06 .video iframe {
+	width: 693px;
+	height: 398px;
+}
+@media (max-width: 1075px) {
+	.tv_06 .video iframe {
+		width: 64.4651163vw;
+		height: 37.0232558vw;
+	}
 }
 @media (max-width: 640px) {
 
