@@ -1,0 +1,9 @@
+body {
+	background: #000;
+}
+.container {
+	max-width: 1075px;
+}
+@media (max-width: 640px) {
+
+}
