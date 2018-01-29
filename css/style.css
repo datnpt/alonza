@@ -3,6 +3,12 @@ body {
 }
 .container {
 	max-width: 1075px;
+	margin: 0 auto;
+}
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 .fv_02 {
 
