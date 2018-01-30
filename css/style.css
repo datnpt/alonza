@@ -17,6 +17,9 @@ body {
 	width: 693px;
 	height: 398px;
 }
+.hide-pc{
+	display: none;
+}
 @media (max-width: 1075px) {
 	.tv_06 .video iframe {
 		width: 64.4651163vw;
@@ -24,5 +27,12 @@ body {
 	}
 }
 @media (max-width: 640px) {
+	
+	.hide-pc{
+		display: block;
+	}
+	.hide-sp{
+		display: none;
+	}
 
 }
