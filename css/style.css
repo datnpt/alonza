@@ -83,6 +83,18 @@ body {
 .mtop-6{
 	margin-top: -6%;
 }
+.float_btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255,255,255,0.55);
+	text-align: center;
+}
+.float_btn img{
+	display: inline-block;
+	vertical-align: bottom;
+}
 @media (max-width: 1075px) {
 	.cd_01 {
 		padding: 0.651vw 0;
@@ -109,6 +121,11 @@ body {
 		top: -2.79vw;
 	}
 }
+@media (max-width: 1024px) {
+	.float_btn img{
+		width: 400px;
+	}
+}
 @media (max-width: 640px) {
 
 	.hide-pc{
@@ -117,7 +134,9 @@ body {
 	.hide-sp{
 		display: none;
 	}
-
+	.float_btn img{
+		width: 250px;
+	}
 }
 @-webkit-keyframes arrow-horizontal {
 	0% { right: -0.465%; }
