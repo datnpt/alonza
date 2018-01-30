@@ -8,7 +8,7 @@
 	function hideFloatBtn() {
 		var sb = scrollBottom(),
 			btn = $('.float_btn'),
-			pos = $('#form').offset().top + (btn.outerHeight() / 2);
+			pos = $('#form').offset().top;
 
 		if(sb >= pos) {
 			btn.fadeOut();
