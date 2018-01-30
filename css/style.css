@@ -80,6 +80,9 @@ body {
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 }
+.mtop-6{
+	margin-top: -6%;
+}
 @media (max-width: 1075px) {
 	.cd_01 {
 		padding: 0.651vw 0;
