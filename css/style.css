@@ -20,6 +20,9 @@ body {
 .hide-pc{
 	display: none;
 }
+.mtop-6{
+	margin-top: -6%;
+}
 @media (max-width: 1075px) {
 	.tv_06 .video iframe {
 		width: 64.4651163vw;
