@@ -17,12 +17,60 @@ body {
 	width: 693px;
 	height: 398px;
 }
+.cv_btn a {
+	position: relative;
+	display: block;
+	margin: 2.14% 4.28%;
+}
+.cv_btn a:after {
+	content: '';
+	background: url('../img/arrow_btn.png') no-repeat;
+	background-size: cover;
+	width: 391px;
+	height: 245px;
+	position: absolute;
+	right: 0;
+	top: -30px;
+
+	animation-name: arrow-horizontal;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+	-webkit-animation-name: arrow-horizontal;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
 @media (max-width: 1075px) {
 	.tv_06 .video iframe {
 		width: 64.4651163vw;
 		height: 37.0232558vw;
 	}
+	.cv_btn a:after {
+		width: 36.37vw;
+		height: 22.79vw;
+		top: -2.79vw;
+	}
 }
 @media (max-width: 640px) {
 
+}
+@-webkit-keyframes arrow-horizontal {
+	0% { right: -0.465%; }
+	25% { right: 1.395%; }
+	50% { right: -0.465%; }
+	75% { right: 1.395%; }
+	100% { right: -0.465%; }
+}
+@keyframes arrow-horizontal {
+	0% { right: -0.465%; }
+	25% { right: 1.395%; }
+	50% { right: -0.465%; }
+	75% { right: 1.395%; }
+	100% { right: -0.465%; }
 }
