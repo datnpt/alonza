@@ -1,3 +1,8 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 body {
 	background: #000;
 }
@@ -9,6 +14,35 @@ body {
 	max-width: 100%;
 	height: auto;
 	display: block;
+}
+.cd_01 {
+	background: rgba(195,0,3,1);
+	background: -moz-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(195,0,3,1)), color-stop(0%, rgba(194,0,2,1)), color-stop(71%, rgba(185,0,0,1)), color-stop(100%, rgba(158,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c30003', endColorstr='#9e0000', GradientType=0 );
+	text-align: center;
+	padding: 7px 0;
+}
+.cd_01 img {
+	text-align: center;
+	margin: 0 auto;
+}
+#CP {
+	color: #fff;
+	font-family: serif;
+	line-height: 0.8;
+	letter-spacing: 5px;
+}
+#CP .after, #CP .jikan, #CP .hun, #CP .byou {
+	font-size: 50px;
+	font-weight: 900;
+}
+#CP .hou, #CP .min, #CP .sec {
+	font-size: 90px;
 }
 .tv_06 .video {
 	text-align: center;
@@ -47,6 +81,21 @@ body {
 	-webkit-animation-direction: alternate;
 }
 @media (max-width: 1075px) {
+	.cd_01 {
+		padding: 0.651vw 0;
+	}
+	.cd_01 img {
+		width: 52.558vw;
+	}
+	#CP {
+		letter-spacing: 0.465vw;
+	}
+	#CP .after, #CP .jikan, #CP .hun, #CP .byou {
+		font-size: 4.65vw;
+	}
+	#CP .hou, #CP .min, #CP .sec {
+		font-size: 8.372vw;
+	}
 	.tv_06 .video iframe {
 		width: 64.4651163vw;
 		height: 37.0232558vw;
@@ -58,7 +107,7 @@ body {
 	}
 }
 @media (max-width: 640px) {
-	
+
 	.hide-pc{
 		display: block;
 	}
