@@ -58,6 +58,13 @@ body {
 	}
 }
 @media (max-width: 640px) {
+	
+	.hide-pc{
+		display: block;
+	}
+	.hide-sp{
+		display: none;
+	}
 
 }
 @-webkit-keyframes arrow-horizontal {
