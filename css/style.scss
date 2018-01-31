@@ -1,0 +1,199 @@
+$width: 750;
+$container-width: $width + px;
+
+@function setvw($target) {
+	$vw: ($width * 0.01) * 1px;
+	@return ($target / $vw) * 1vw;
+}
+@function setper($target) {
+	@return ($target * 100%) / $width;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: #000;
+}
+#form {
+	background: #fff;
+}
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.cd_01 {
+	background: rgba(195,0,3,1);
+	background: -moz-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(195,0,3,1)), color-stop(0%, rgba(194,0,2,1)), color-stop(71%, rgba(185,0,0,1)), color-stop(100%, rgba(158,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(195,0,3,1) 0%, rgba(194,0,2,1) 0%, rgba(185,0,0,1) 71%, rgba(158,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c30003', endColorstr='#9e0000', GradientType=0 );
+	text-align: center;
+	padding: 7px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: $container-width;
+	z-index: 9;
+	img {
+		text-align: center;
+		margin: 0 auto;
+		width: 394px;
+	}
+}
+#CP {
+	color: #fff;
+	font-family: serif;
+	line-height: 0.8;
+	letter-spacing: 5px;
+	.after, .jikan, .hun, .byou {
+		font-size: 35px;
+		font-weight: 900;
+	}
+	.hou, .min, .sec {
+		font-size: 63px;
+	}
+}
+.fv_02 {
+	padding-top: 108px;
+}
+.tv_06 {
+	.video {
+		text-align: center;
+		iframe {
+			width: 483px;
+			height: 278px;		
+		}
+	}
+}
+.cv_btn {
+	a {
+		position: relative;
+		display: block;
+		margin: 2.14% 4.28%;
+		&:after {
+			content: '';
+			background: url('../img/arrow_btn.png') no-repeat;
+			background-size: cover;
+			// width: 391px;
+			// height: 245px;
+			width: 272.78px;
+			height: 170.92px;
+			position: absolute;
+			right: 0;
+			top: -21px;
+
+			animation-name: arrow-horizontal;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-delay: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+
+			-webkit-animation-name: arrow-horizontal;
+			-webkit-animation-duration: 2s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: 1s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+		}
+	}
+}
+.mtop-6{
+	margin-top: -6%;
+}
+.float_btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	width: 100%;
+	// background: rgba(255,255,255,0.3);
+	text-align: center;
+	img{
+		display: inline-block;
+		vertical-align: bottom;
+	}
+}
+.hide-pc{
+	display: none;
+}
+
+@media (max-width: $container-width) {
+	.cd_01 {
+		// padding: 0.651vw 0;
+		padding: setvw(5px) 0;
+		img {
+			// width: 52.558vw;
+			width: setvw(394px);
+		}
+	}
+	#CP {
+		// letter-spacing: 0.465vw;
+		letter-spacing: setvw(3px);
+		.after, .jikan, .hun, .byou {
+			// font-size: 4.65vw;
+			font-size: setvw(35px);
+		}
+		.hou, .min, .sec {
+			// font-size: 8.372vw;
+			font-size: setvw(63px);
+		}
+	}
+	.fv_02 {
+		padding-top: setvw(108px);
+	}
+	.tv_06 .video iframe {
+		// width: 64.4651163vw;
+		// height: 37.0232558vw;
+		width: setvw(483px);
+		height: setvw(278px);
+	}
+	.cv_btn a:after {
+		// width: 36.37vw;
+		// height: 22.79vw;
+		// top: -2.79vw;
+		// width: setvw(391px);
+		// height: setvw(245px);
+		width: setvw(272.78px);
+		height: setvw(170.92px);
+		top: setvw(-21px);
+	}
+	.float_btn img{
+		width: setvw(500px);
+	}
+}
+
+@media (max-width: 640px) {
+	.hide-pc{
+		display: block;
+	}
+	.hide-sp{
+		display: none;
+	}
+}
+
+@-webkit-keyframes arrow-horizontal {
+	0% { right: -0.465%; }
+	25% { right: 1.395%; }
+	50% { right: -0.465%; }
+	75% { right: 1.395%; }
+	100% { right: -0.465%; }
+}
+@keyframes arrow-horizontal {
+	0% { right: -0.465%; }
+	25% { right: 1.395%; }
+	50% { right: -0.465%; }
+	75% { right: 1.395%; }
+	100% { right: -0.465%; }
+}
