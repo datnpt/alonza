@@ -42,30 +42,40 @@ body {
 	padding: 7px 0;
 	position: fixed;
 	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 	width: 100%;
-	max-width: $container-width;
+	max-width: 480px;
 	z-index: 9;
 	img {
 		text-align: center;
 		margin: 0 auto;
-		width: 394px;
+		width: 240px;
 	}
 }
 #CP {
 	color: #fff;
 	font-family: serif;
 	line-height: 0.8;
-	letter-spacing: 5px;
-	.after, .jikan, .hun, .byou {
-		font-size: 35px;
+	letter-spacing: 3px;
+	.after {
+		font-size: 22px;
+	} 
+	.jikan, .hun, .byou {
+		font-size: 24px;
 		font-weight: 900;
 	}
 	.hou, .min, .sec {
-		font-size: 63px;
+		font-size: 34px;
+		font-weight: 900;
 	}
 }
+#CDT {
+	font-size: 24px;
+}
 .fv_02 {
-	padding-top: 108px;
+	padding-top: 71px;
 }
 .tv_06 {
 	.video {
@@ -85,8 +95,6 @@ body {
 			content: '';
 			background: url('../img/arrow_btn.png') no-repeat;
 			background-size: cover;
-			// width: 391px;
-			// height: 245px;
 			width: 272.78px;
 			height: 170.92px;
 			position: absolute;
@@ -118,7 +126,6 @@ body {
 	left: 0;
 	z-index: 9;
 	width: 100%;
-	// background: rgba(255,255,255,0.3);
 	text-align: center;
 	img{
 		display: inline-block;
@@ -130,51 +137,21 @@ body {
 }
 
 @media (max-width: $container-width) {
-	.cd_01 {
-		// padding: 0.651vw 0;
-		padding: setvw(5px) 0;
-		img {
-			// width: 52.558vw;
-			width: setvw(394px);
-		}
-	}
-	#CP {
-		// letter-spacing: 0.465vw;
-		letter-spacing: setvw(3px);
-		.after, .jikan, .hun, .byou {
-			// font-size: 4.65vw;
-			font-size: setvw(35px);
-		}
-		.hou, .min, .sec {
-			// font-size: 8.372vw;
-			font-size: setvw(63px);
-		}
-	}
-	.fv_02 {
-		padding-top: setvw(108px);
-	}
 	.tv_06 .video iframe {
-		// width: 64.4651163vw;
-		// height: 37.0232558vw;
 		width: setvw(483px);
 		height: setvw(278px);
 	}
 	.cv_btn a:after {
-		// width: 36.37vw;
-		// height: 22.79vw;
-		// top: -2.79vw;
-		// width: setvw(391px);
-		// height: setvw(245px);
 		width: setvw(272.78px);
 		height: setvw(170.92px);
 		top: setvw(-21px);
 	}
-	.float_btn img{
-		width: setvw(500px);
-	}
 }
 
 @media (max-width: 640px) {
+	.cd_01 {
+		max-width: 100%;
+	}
 	.hide-pc{
 		display: block;
 	}

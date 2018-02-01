@@ -31,4 +31,11 @@
 	$(window).scroll(function() {
 		hideFloatBtn();
 	});
+
+	// anchor link
+	$('.cv_btn a, .float_btn a').click(function(e) {
+		e.preventDefault();
+		var form = $('#form').offset().top - $('.cd_01').outerHeight();
+		$('html, body').animate({ scrollTop: form }, 500);
+	});
 })(jQuery);

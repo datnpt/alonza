@@ -36,32 +36,43 @@ body {
   padding: 7px 0;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 100%;
-  max-width: 750px;
+  max-width: 480px;
   z-index: 9;
 }
 .cd_01 img {
   text-align: center;
   margin: 0 auto;
-  width: 394px;
+  width: 240px;
 }
 
 #CP {
   color: #fff;
   font-family: serif;
   line-height: 0.8;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
-#CP .after, #CP .jikan, #CP .hun, #CP .byou {
-  font-size: 35px;
+#CP .after {
+  font-size: 22px;
+}
+#CP .jikan, #CP .hun, #CP .byou {
+  font-size: 24px;
   font-weight: 900;
 }
 #CP .hou, #CP .min, #CP .sec {
-  font-size: 63px;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+#CDT {
+  font-size: 24px;
 }
 
 .fv_02 {
-  padding-top: 108px;
+  padding-top: 71px;
 }
 
 .tv_06 .video {
@@ -122,27 +133,6 @@ body {
 }
 
 @media (max-width: 750px) {
-  .cd_01 {
-    padding: 0.6666666667vw 0;
-  }
-  .cd_01 img {
-    width: 52.5333333333vw;
-  }
-
-  #CP {
-    letter-spacing: 0.4vw;
-  }
-  #CP .after, #CP .jikan, #CP .hun, #CP .byou {
-    font-size: 4.6666666667vw;
-  }
-  #CP .hou, #CP .min, #CP .sec {
-    font-size: 8.4vw;
-  }
-
-  .fv_02 {
-    padding-top: 14.4vw;
-  }
-
   .tv_06 .video iframe {
     width: 64.4vw;
     height: 37.0666666667vw;
@@ -153,12 +143,12 @@ body {
     height: 22.7893333333vw;
     top: -2.8vw;
   }
-
-  .float_btn img {
-    width: 66.6666666667vw;
-  }
 }
 @media (max-width: 640px) {
+  .cd_01 {
+    max-width: 100%;
+  }
+
   .hide-pc {
     display: block;
   }
